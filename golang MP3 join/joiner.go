@@ -7,6 +7,8 @@ import (
 	"github.com/dmulholland/mp3lib"
 )
 
+// Source: https://github.com/hyacinthus/mp3join
+
 // Joiner is a mp3 file joiner
 type Joiner struct {
 	totalFrames  uint32 // for gen vbr header
