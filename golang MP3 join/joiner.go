@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/dmulholland/mp3lib"
+	"github.com/dmulholl/mp3lib"
 )
 
 // Source: https://github.com/hyacinthus/mp3join
