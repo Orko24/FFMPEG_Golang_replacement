@@ -22,11 +22,45 @@ class command_line_runner(object):
 # command_line_runner(cmd = cmd_golang).run()
 # command_line_runner(cmd = cmd_cpp).run()
 
+# class file_address_generator(object):
+
+#     def __init__(self, file):
+#         self.file = file
+    
+
+
 class file_generator(object):
 
     def __init__(self,directory):
 
         self.directory = directory
+
+    def files(self):
+
+        file_list = os.listdir(self.directory)
+        return file_list
+    
+    def file_list_addresses(self):
+
+        file_list = self.files()
+
+        full_directory = list(map(lambda x: os.path.join(self.directory, x), file_list))
+
+        return full_directory
+
+class MP3_merge_software_activation(object):
+
+    def __init__(self):
+
+        self.MP3CAT_command = "go install github.com/dmulholl/mp3cat@latest"
+        self.MP3WRAP_command = ""
+
+
+
+        
+
+        
+        
 
     
 
