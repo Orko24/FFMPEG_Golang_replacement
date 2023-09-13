@@ -95,7 +95,12 @@ class solution_commands(object):
     def golang_sol(self):
 
         golang_cmd = self.golang_cmd()
+
+        command_line_program = command_line_runner(golang_cmd)
+        command_line_program.run()
         
+        return self.output_file
+
 
 
     def cpp_cmd(self):
@@ -104,6 +109,16 @@ class solution_commands(object):
 
         cpp_cmd = "mp3wrap {} {}".format(self.output_file, self.file_string())
         return cpp_cmd
+    
+    def cpp_sol(self):
+
+        cpp_cmd = self.cpp_cmd()
+
+        command_line_program = command_line_runner(cpp_cmd)
+        command_line_program.run()
+        
+        return self.output_file
+
     
     
 
